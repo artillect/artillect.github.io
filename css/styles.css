@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Gilbert-Color;
+  src: url("../font/Gilbert-Color Bold-Preview_1004.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilbert;
+  src: url("../font/Gilbert Bold-Preview_1004.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  font-family: Gilbert-Color;
+}
+
+h2 {
+  font-family: Gilbert;
+  font-size: 2em;
+  line-height: 1.3em;
+  position:relative;
+  text-align: center;
+}
+
+.animation {
+  position: absolute;
+  bottom: 0;
+  vertical-align: baseline;
+  display: inline-block;
+  height: 1.3;
+  text-align: left;
+}
+
+.animation-window {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.animation ul {
+  position: relative;
+  list-style: none;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  height: 1.3em;
+  animation: cycle-5-items 7s ease alternate infinite;
+}
+
+.animation li {
+  margin: 0 0.3em ;
+}
+
+@keyframes cycle-5-items {
+  0%, 10% {
+    transform: translateY(0%);
+  }
+
+  15%, 35% {
+    transform: translateY(-100%);
+  }
+
+  40%, 60% {
+    transform: translateY(-200%);
+  }
+
+  65%, 85% {
+    transform: translateY(-300%);
+  }
+
+  90%, 100% {
+    transform: translateY(-400%);
+  }
+}
