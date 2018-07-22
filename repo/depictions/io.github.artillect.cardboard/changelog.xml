@@ -1,15 +1,31 @@
 <changelog>
 	<changes>
+		<version>1.1.1</version>
+		<change>Fixed depiction in control file.</change>
+	</changes>
+	<changes>
+		<version>1.1.0</version>
+		<change>Rewrote tweak from the ground up, fixed manu bugs.</change>
+	</changes>
+	<changes>
 		<version>1.0.4</version>
 		<change>Made status bar and overlay display properly on lock screen</change>
 		<change>Status bar and overlay now hide when in edit mode on iPhone X or on phones with iPhone X features enabled.</change>
+	</changes>
+	<changes>
 		<version>1.0.3</version>
 		<change>Fixed an issue where the bottom edge of the rectangle is misaligned causing the bottom corners to cut off and flash sometimes.</change>
+	</changes>
+	<changes>
 		<version>1.0.2</version>
 		<change>Changed spacing for all devices, should fix issues with status bar elements escaping the status bar.</change>
+	</changes>
+	<changes>
 		<version>1.0.1</version>
 		<change>Removed small black bar on bottom of screen</change>
 		<change>Added compatibility for LittleX, Homegestures, Fluidity, and any similar tweaks that change the status bar to the iPhone X styled status bar</change>
+	</changes>
+	<changes>
 		<version>1.0.0</version>
 		<change>Initial release</change>
 	</changes>
