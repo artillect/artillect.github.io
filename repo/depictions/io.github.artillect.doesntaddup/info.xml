@@ -1,22 +1,25 @@
 <package>
-	<id>io.github.artillect.doesntaddup</id>
-	<name>Doesn't Add Up</name>
-	<version>1.0.1</version>
-	<compatibility>
-		<firmware>
-			<maxiOS>11.3.1</maxiOS>
-			<otherVersions>unconfirmed</otherVersions>
-			<!--
-			for otherVersions, you can put either unsupported or unconfirmed
-			-->
-		</firmware>
-	</compatibility>
-	<dependencies></dependencies>
-	<descriptionlist>
-	</descriptionlist>
-	<screenshots></screen	shots>
-	<changelog>
-		<change>Initial release</change>
-	</changelog>
-	<links></links>
+    <id>io.github.artillect.doesntaddup</id>
+    <name>Doesn't Add Up</name>
+    <version>1.0.2</version>
+    <compatibility>
+        <firmware>
+            <miniOS>11.0</miniOS>
+            <maxiOS>11.3.1</maxiOS>
+            <otherVersions>unconfirmed</otherVersions>
+            <!--
+            for otherVersions, you can put either unsupported or unconfirmed
+            -->
+        </firmware>
+    </compatibility>
+    <dependencies></dependencies>
+    <descriptionlist>
+        <description>Change the calculator error text to anything you want.</description>
+    </descriptionlist>
+    <screenshots></screenshots>
+    <changelog>
+			<change>Actually fixed defaults</change>
+			<change>Fixed an issue where the string wouldn't change.</change>
+    </changelog>
+    <links></links>
 </package>
