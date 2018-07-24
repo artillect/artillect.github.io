@@ -43,48 +43,46 @@ nav li img {
   overflow: hidden;
 }
 
-#welcome .title-box {
-  height: 28px;
+#welcome #title-box {
+  height: 20px;
   background-image: linear-gradient(to right, #000066, #3366cc);
   border-bottom: 1px solid #99ccff;
   color: #ffffff;
   font-family: sans-serif;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 20px;
 }
 
-#welcome .title-box img {
+#welcome #title-box img {
   vertical-align: top;
   position: relative;
 }
 
 #close-button {
-  width: 24px;
-  height: 20px;
-  background-color: #cccccc;
+  width: 16px;
+  height: 14px;
+  background-color: #c0c0c0;
   text-align: center;
   display: inline-block;
-  margin: 2px;
+  margin: 1px;
   border-style: outset;
   border-width: 2px;
   border-top-color: #fff;
   border-left-color: #fff;
-  border-right-color: #666666;
-  border-bottom-color: #666666;
-  line-height: 20px;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  line-height: 14px;
   color: #666666;
   float: right;
 }
 
 #close-button:active {
-  background-color: #666666;
   border-style: inset;
   border-width: 2px;
-  border-top-color: #666;
-  border-left-color: #666;
+  border-top-color: #808080;
+  border-left-color: #808080;
   border-right-color: #fff;
   border-bottom-color: #fff;
-  color: #ccc;
 }
 
 #welcome .content-box {
