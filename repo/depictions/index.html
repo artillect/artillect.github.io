@@ -11,7 +11,6 @@
   <script type="text/javascript" src="js/jquery.querystring.js"></script>
   <script type="text/javascript" src="js/data-loader-engine.js"></script>
   <script type="text/javascript" src="js/ios_version_check.js"></script>
-  <script type="text/javascript" src="js/touch.js"></script>
   <style>
 	@media (max-width: 767px) {
 		body{background:#efeff4!important;margin:0;padding:0;border:0;outline:0;box-sizing:border-box}
@@ -21,9 +20,7 @@
 	}
   </style>
   <script type="text/javascript">
-
 	bundleid = $.QueryString['p'];
-
     var contentBlocks = 	{
     	"#packageName" :
 			{"type":"text","source":"package>name"}
@@ -114,7 +111,6 @@
 					if ($(source).size()==0){
 						$('#externalLinksContainer').remove()
 					}
-
                     $.each(source, function(index,data) {
                         var a = $("<a class='link-item list-group-item'>");
                         a.attr("href",$(data).find('url').text());
@@ -127,9 +123,7 @@
                         $(a).append($(data).find('name').text());
                         $(element).append(a);
                     }); //each
-
 				}
-
 			}
 	}
     $( document ).ready(function() {
@@ -140,7 +134,6 @@
             success : function(xml){
 				document.title = $(xml).find("package>name").text();
             	data_loader_engine(contentBlocks,xml)
-
             },
 			cache   : false,
             error: function() {
@@ -148,7 +141,6 @@
 				$("#packageInformation").hide();
             }
         }); //ajax
-
     }); // ready
   </script>
 </head>
@@ -160,7 +152,7 @@
 	<div id="packageHeader" class="container" style="display:none">
 		<div class="jumbotron">
 			<h1 id="packageName"></h1>
-			<p>brought to you by Artillect</p>
+			<p>brought to you by Reposi3</p>
 		</div>
 	</div>
 
@@ -211,7 +203,6 @@
        });
      }
    }
-
     var repoContents =  {
         "#repoFooterLinks" :
             {"type":"custom"
@@ -243,10 +234,7 @@
               setAnchorTargets();
             }
         }); //ajax
-
-
     }); // ready
-
 </script>
 
 <div id="contactInfo">
