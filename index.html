@@ -1,63 +1,33 @@
 <!DOCTYPE html>
 <html>
  <head>
+   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Cydia Searcher</title>
+   <title>Artillect's Website</title>
       <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript">
-    function createWordListAnimation(animNode, delay){
-    // Fetch the DOM elements.
-    var animWindow = animNode.querySelector(".animation-window");
-    var ul = animWindow.querySelector("ul");
-    var lis = ul.querySelectorAll("li");
-
-    // Copy the animation's window to create the gray list.
-    var grayList = animWindow.cloneNode(true);
-    var grayUl = grayList.querySelector("ul");
-    grayList.classList.remove("animation-window");
-    grayList.classList.add("animation-gray-list");
-    animNode.insertBefore(grayList, animWindow);
-
-    // This function shows the li number `liNum`.
-    function goTo(liNum){
-    var li = lis[liNum];
-    var liTop = li.getBoundingClientRect().top;
-    var ulTop = ul.getBoundingClientRect().top;
-    var liOffset = liTop - ulTop;
-    ul.style.top = -liOffset + "px";
-    grayUl.style.top = -liOffset + "px";
-    }
-
-    // Set up an interval that changes the current li every `delay` ms.
-    var current = 0;
-    // We need a boolean to know if the animation is going up or down.
-    var ascending = true;
-    // Create the interval.
-    return setInterval(function(){
-    ascending = ascending && current + 1 < lis.length || current === 0;
-    current = ascending ? current + 1: current - 1;
-    goTo(current);
-    }, delay);
-    }
-
-    createWordListAnimation(document.querySelector(".animation"), 1000 /* (ms) */);
-</script>
+  <script type="application/javascript">
+  function hide() {
+      var x = document.getElementById("welcome");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+  </script>
  </head>
- <body>
-    <h1>Riley Groeschel's Web Design Portfolio</h1>
-    <h2>This is
-    <div class="animation">
-      <div class="animation-window">
-        <ul>
-          <li>my portfolio.</li>
-          <li>my design work.</li>
-          <li>a website.</li>
-          <li>not a pipe.</li>
-          <li>a test.</li>
-        </ul>
-      </div>
-    </div></h2>
-
+ <body style="background-color:#006666; background-repeat:no-repeat; background-size: cover">
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="./img/logo.png" height="32" width="32"></img></a></li>
+        <li><a href="./repo/index.html">Repo</a></li>
+      </ul>
+    </nav>
+    <div id="welcome">
+      <div class="title-box"><img src="./img/logo.png" height="24" width="24"></img>Welcome to Artillect's Website!<div onclick="hide()" id="close-button">✕</div></div>
+      <div class="content-box"></div>
+    </div>
  </body>
 </html>
