@@ -1,22 +1,24 @@
 <package>
-	<id>io.github.artillect.nononotifications</id>
-	<name>No No Notifications</name>
-	<version>1.0.0</version>
-	<compatibility>
-		<firmware>
-			<maxiOS>11.3.1</maxiOS>
-			<otherVersions>unconfirmed</otherVersions>
-			<!--
-			for otherVersions, you can put either unsupported or unconfirmed
-			-->
-		</firmware>
-	</compatibility>
-	<dependencies></dependencies>
-	<descriptionlist>
-	</descriptionlist>
-	<screenshots></screen	shots>
-	<changelog>
-		<change>Initial release</change>
-	</changelog>
-	<links></links>
+    <id>io.github.artillect.nononotifications</id>
+    <name>No No Notifications</name>
+    <version>1.0.1</version>
+    <compatibility>
+        <firmware>
+            <miniOS>11.0</miniOS>
+            <maxiOS>11.3.1</maxiOS>
+            <otherVersions>unconfirmed</otherVersions>
+            <!--
+            for otherVersions, you can put either unsupported or unconfirmed
+            -->
+        </firmware>
+    </compatibility>
+    <dependencies></dependencies>
+    <descriptionlist>
+        <description>Hide "No Older Notifications" text in lock screen and notification center.</description>
+    </descriptionlist>
+    <screenshots></screenshots>
+    <changelog>
+			<change>Fixed depictions.</change>
+    </changelog>
+    <links></links>
 </package>
