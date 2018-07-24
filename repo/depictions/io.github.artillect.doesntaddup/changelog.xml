@@ -1,5 +1,10 @@
 <changelog>
 	<changes>
+		<version>1.0.2</version>
+		<change>Actually fixed defaults</change>
+		<change>Fixed an issue where the string wouldn't change.</change>
+	</changes>
+	<changes>
 		<version>1.0.1</version>
 		<change>Fixed defaults</change>
 		<change>Fixed control file</change>
