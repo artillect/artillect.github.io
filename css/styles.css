@@ -6,10 +6,13 @@
 
 body {
     font-family: sans-serif;
+    color: #2b2b2b;
+    background-color: #efefef;
+    /* style="background-color:#dbdcde; "*/
 }
 
 nav {
-  width: 80%;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -40,13 +43,24 @@ h1 {
   font-size: 128px;
   letter-spacing: -13px;
       font-family: 'Comfortaa', sans-serif;
+      text-align: center;
+      color: #fff;
+}
+
+.title {
+  padding: 16px 32px 12px 16px;
+    background-color: #fed70e;
 }
 
 h2 {
   font-size: 32px;
-  letter-spacing: -4px;
-        font-family: 'Comfortaa', sans-serif;
+  letter-spacing: -2px;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 0px;
+}
 
+h3 {
+  text-align: center;
 }
 
 .big {
@@ -54,28 +68,52 @@ h2 {
   font-weight: lighter;
 }
 
+.period {
+  margin-left: 8px;
+  color: #21409a;
+}
+
 .content p {
   text-align: justify;
 }
 
-.row-yellow {
-  width: 100%;
-  background-color: #f8c93b;
-  padding: 0 8px;
-  display: block;
+.subtitle {
+  color: #FFF;
+    font-family: 'Comfortaa', sans-serif;
+  font-size: 128px;
+  line-height: 96px;
+  padding: 16px 8px ;
 }
 
-.row-yellow::after {
-  position: relative;
-  top: 16px;
-  left: 16px;
-  width: 100%;
+.box-yellow-6 {
+  width: 66%;
   height: 100%;
-  border: 3px solid black;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
 }
+
 .column-3 {
-  width: 33%;
+  width: auto;
   padding: 16px;
   vertical-align: top;
   display: inline-block;
+  background-color: ;
+}
+
+.row {
+  width: 100%;
+}
+
+.square {
+  height: 128px;
+  width: 128px;
+  background-color: #f7d32d;
+  display: inline-block;
+  font-family: 'Comfortaa', sans-serif;
+  text-align: right;
+  font-size: 128px;
+  line-height: 96px;
+  padding: 16px 8px ;
 }
