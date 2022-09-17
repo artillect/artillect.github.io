@@ -4,8 +4,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 0 0.5rem;
+    display: block;
 }
 
 hr {
@@ -45,6 +44,10 @@ h1,h2,h3 {
     height:100%;
 } */
   
+  .dropbtn {
+    padding: 4px 0;
+  }
+
   .dropdown {
     position: relative;
     display: inline;
@@ -115,13 +118,9 @@ h1,h2,h3 {
   #header hr, #footer hr {
     display: block;
   }
-  
-
-  #footer {
-
-  }
-
-  #content {
-
-  } 
+  nav ul li {
+    display: inline;
+    padding: 0 0.5rem;
+  }  
+ 
 }
